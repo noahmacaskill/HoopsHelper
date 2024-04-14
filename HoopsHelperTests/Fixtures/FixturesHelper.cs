@@ -2,10 +2,10 @@
 {
     public static class FixturesHelper
     {
-        private const string gameFixturesDir = @"..\..\..\Fixtures\ExpectedGames\";
-        private const string apiStatsFixturesDir = @"..\..\..\Fixtures\ExpectedApiStats\";
-        private const string statFixturesDir = @"..\..\..\Fixtures\ExpectedStats\";
-        private const string statMocksDir = @"..\..\..\Fixtures\StatMocks\";
+        private static string gameFixturesDir = Path.Combine("..", "..", "..", "Fixtures", "ExpectedGames");
+        private static string apiStatsFixturesDir = Path.Combine("..", "..", "..", "Fixtures", "ExpectedApiStats");
+        private static string statFixturesDir = Path.Combine("..", "..", "..", "Fixtures", "ExpectedStats");
+        private static string statMocksDir = Path.Combine("..", "..", "..", "Fixtures", "StatMocks");
 
         public static IEnumerable<string> GamesFixtures
         {
